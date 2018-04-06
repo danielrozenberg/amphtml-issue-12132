@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ⚡️>
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>&lt;amp-img&gt; with fallback and media</title>
+    <link rel="canonical" href="http://localhost:8000/with-fallback.amp.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  <body>
+    <amp-img alt="Kitten"
+             src="img/kitten_3008.webp"
+             width="3008"
+             height="2000"
+             layout="responsive"
+             media="(min-width: 1601px)">
+      <amp-img alt="Kitten"
+               fallback
+               src="img/kitten_3008.jpg"
+               width="3008"
+               height="2000"
+               layout="responsive"></amp-img>
+    </amp-img>
+    <amp-img alt="Kitten"
+             src="img/kitten_1600.webp"
+             width="1600"
+             height="1064"
+             layout="responsive"
+             media="(min-width: 801px) and (max-width: 1600px)">
+      <amp-img alt="Kitten"
+               fallback
+               src="img/kitten_1600.jpg"
+               width="1600"
+               height="1064"
+               layout="responsive"></amp-img>
+    </amp-img>
+    <amp-img alt="Kitten"
+             src="img/kitten_800.webp"
+             width="800"
+             height="532"
+             layout="responsive"
+             media="(min-width: 401px) and (max-width: 800px)">
+      <amp-img alt="Kitten"
+               fallback
+               src="img/kitten_800.jpg"
+               width="800"
+               height="532"
+               layout="responsive"></amp-img>
+    </amp-img>
+    <amp-img alt="Kitten"
+             src="img/kitten_400.webp"
+             width="400"
+             height="266"
+             layout="responsive"
+             media="(max-width: 400px)">
+      <amp-img alt="Kitten"
+               fallback
+               src="img/kitten_400.jpg"
+               width="400"
+               height="266"
+               layout="responsive"></amp-img>
+    </amp-img>
+    <p>Source: <a href="https://commons.wikimedia.org/wiki/File:Cute_grey_kitten.jpg">Nicolas Suzor from Brisbane, Australia</a></p>
+  </body>
+</html>
